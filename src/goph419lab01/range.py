@@ -1,4 +1,5 @@
 import numpy as np
+from goph419lab01.tests import test_root as tr
 
 def launch_angle_range(ve_v0, alpha, tol_alpha):
 
@@ -9,8 +10,9 @@ def launch_angle_range(ve_v0, alpha, tol_alpha):
     fact = 1
     d_fact = 1
 
-    a_min = (1 + tol_alpha) * alpha
-    a_max = (1 - tol_alpha) * alpha
+    if (pass_fail_min or pass_fail_max) == 0:
+
+
 
     sin_min = (1 + a_min) * np.sqrt(1 - ((a_min / (1 + a_min)) * (ve_v0 ** 2)))
     sin_max = (1 + a_max) * np.sqrt(1 - ((a_max / (1 + a_max)) * (ve_v0 ** 2)))

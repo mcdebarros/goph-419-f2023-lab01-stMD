@@ -1,4 +1,7 @@
 from goph419lab01.range import launch_angle_range as lar
+from goph419lab01.tests import test_root as tr
+from goph419lab01.tests import test_sin as ts
+from goph419lab01.tests import test_vel as tv
 from matplotlib import pyplot as plt
 import numpy as np
 
@@ -12,6 +15,13 @@ def main():
     v_0 = 0 #Initial velocity
     ve_v0 = 2.0
     tol_alpha = 0.02
+
+    a_min = (1 + tol_alpha) * alpha
+    a_max = (1 - tol_alpha) * alpha
+
+    a_range = [a_min,a_max]
+
+    pass_fail_root = tr()
 
     domain = lar(ve_v0,alpha,tol_alpha)
 
