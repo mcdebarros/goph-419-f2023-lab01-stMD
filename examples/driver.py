@@ -8,18 +8,12 @@ def main():
     m_e = 5.972e24 #Earth mass
     r_e = 6.3781e6 #Earth radius
     v_e = np.sqrt((2*gc*m_e)/(r_e)) #Escape velocity
-    alpha = 2.0 #Distance ratio 
+    alpha = 0.25 #Distance ratio 
     v_0 = 0 #Initial velocity
-    e_o = v_e / v_0
+    ve_v0 = 2.0
     tol_alpha = 0.02
 
-    x = np.linspace(-10,10,1)
-
-    phi_range = rng(e_o,alpha,tol_alpha)
-
-
-
-
+    domain = lar(ve_v0,alpha,tol_alpha)
 
 if __name__ == "__main__":
     main()

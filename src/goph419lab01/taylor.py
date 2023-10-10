@@ -19,8 +19,9 @@ def exp(x):
     eps_a = 1
     tot = 0
     x = float(x)
-    fact = 0
+    fact = 1
     k = 1
+    prev = 1
 
     while eps_a > eps_s:
 
@@ -29,10 +30,12 @@ def exp(x):
         eps_a = abs(term/tot)
         k += 1
         fact = fact * k
+        prev = tot
     
     return tot
 
 tot = exp(5)
-print(tot)
+print("function: ", tot)
+print("actual: ", np.exp(5))
 
 

@@ -6,9 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "goph419lab01"
 version = "0.0.1"
 authors = [
-    { name = "Brandon Karchewski", email = "brandon.karchewski@ucalgary.ca" },
+    { name = "Mauricio de Barros", email = "mauricio.debarros@ucalgary.ca" },
 ]
-description = "GOPH 419 Examples F2023"
+description = "GOPH 419 LAB 01"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = ["numpy", "matplotlib"]
@@ -19,4 +19,4 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/karcheba1/goph419-f2023-examples"
+"Homepage" = "https://github.com/mcdebarros/goph-419-f2023-lab01-stMD"
