@@ -1,3 +1,5 @@
+import numpy as np
+
 def launch_angle_range(ve_v0, alpha, tol_alpha):
 
     eps_s = 0.5e-5

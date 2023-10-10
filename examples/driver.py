@@ -15,7 +15,7 @@ def main():
 
     x = np.linspace(-10,10,1)
 
-    phi_range = rng(e_o,alpha,tol_alpha)
+    phi_range = lar(e_o,alpha,tol_alpha)
 
 
 
