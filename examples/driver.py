@@ -55,7 +55,7 @@ def main():
     a_min = 0 #Sets minimum alpha for ve/v0 = 2.0
     tol_alpha = 0.04
 
-    alpha = np.linspace(a_min,a_max,30) #Creates array of alpha values to plot
+    alpha = np.linspace(a_min,a_max,10000) #Creates array of alpha values to plot
 
     phi = np.zeros((len(alpha), 2)) #Creates zero-matrix to be populated by values of phi
     phi_min = phi #Creates zero-matrix to be populated by values of phi
@@ -75,6 +75,7 @@ def main():
     plt.plot(alpha,phi_min,"-c",label="Minimum phi") #Plots minimum values of phi against alpha
     plt.plot(alpha,phi_max,"-r",label="Maximum phi") #Plots maximum values of phi against alpha
     plt.legend() #Sets legend
+    plt.savefig('C:\\Users\\Mauricio\\REPOS\\GOPH419\\goph-419-f2023-lab01-stMD\\figures\\alpha.png')
     plt.grid() #Grids figure
 
 #-----------------------------------------------------------------------------
@@ -84,7 +85,7 @@ def main():
     ve_min = 3 * np.sqrt(1/5) #Minimum value of ve/v0 for alpha = 0.25
     ve_max = np.sqrt(5) #Maximum value of ve/v0 for alpha = 0.25
 
-    ve_v0 = np.linspace(ve_min,ve_max,30) #Creates array of ve/v0 values to plot
+    ve_v0 = np.linspace(ve_min,ve_max,10000) #Creates array of ve/v0 values to plot
 
     phi = np.zeros((len(ve_v0), 2)) #Creates zero-matrix to be populated with values of phi
     phi_min = phi #Creates zero-matrix to be populated with values of phi
@@ -105,6 +106,7 @@ def main():
     plt.plot(ve_v0,phi_max,"-r",label="Maximum phi") #Plots maximum values of phi for some ve/v0
     plt.legend() #Sets legend
     plt.grid() #Grids figure
+    plt.savefig('C:\\Users\\Mauricio\\REPOS\\GOPH419\\goph-419-f2023-lab01-stMD\\figures\\vev0.png')
     plt.show() #Shows plots
 
 if __name__ == "__main__": #Initializes program
