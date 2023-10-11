@@ -75,7 +75,7 @@ def main():
     plt.plot(alpha,phi_min,"-c",label="Minimum phi") #Plots minimum values of phi against alpha
     plt.plot(alpha,phi_max,"-r",label="Maximum phi") #Plots maximum values of phi against alpha
     plt.legend() #Sets legend
-    plt.savefig('C:\\Users\\Mauricio\\REPOS\\GOPH419\\goph-419-f2023-lab01-stMD\\figures\\alpha.png')
+    plt.savefig('.\\goph-419-f2023-lab01-stMD\\figures\\alpha.png')
     plt.grid() #Grids figure
 
 #-----------------------------------------------------------------------------
@@ -106,7 +106,7 @@ def main():
     plt.plot(ve_v0,phi_max,"-r",label="Maximum phi") #Plots maximum values of phi for some ve/v0
     plt.legend() #Sets legend
     plt.grid() #Grids figure
-    plt.savefig('C:\\Users\\Mauricio\\REPOS\\GOPH419\\goph-419-f2023-lab01-stMD\\figures\\vev0.png')
+    plt.savefig('.\\goph-419-f2023-lab01-stMD\\figures\\vev0.png')
     plt.show() #Shows plots
 
 if __name__ == "__main__": #Initializes program
