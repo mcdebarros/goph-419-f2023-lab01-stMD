@@ -51,7 +51,9 @@ def launch_angle_range(ve_v0, alpha, tol_alpha):
 
     print("Alpha = ",alpha) #Displays alpha used
     print("Expected minimum angle: ", phi_min_exp) #Shows computed arcsin value
-    print("Computed minimum angle: ",phi_min) #Shows expected arcsin
+    print("Computed minimum angle: ",phi_min) #Shows expected 
+    print("Total iterations: ", k)
+    print()
 
     eps_a = 1 #Default value for relative error
     tot = 0 #Initializes summation
@@ -73,6 +75,7 @@ def launch_angle_range(ve_v0, alpha, tol_alpha):
     phi_max_exp = np.arcsin(sin_max) #Computes expected arcsin
     print("Expected Maximum Angle: ", phi_max_exp) #Displays computed arcsin
     print("Computed Maximum Angle: ",phi_max) #Displays expected arcsin
+    print("Total Iterations: ", k)
     print()
 
     domain = np.array([phi_min,phi_max]) #Creates array of minimum and maximum phi values
